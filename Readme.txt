@@ -10,3 +10,7 @@ git add .
 git commit -m "kya change kare"
 git push
 
+
+
+git pull
+
