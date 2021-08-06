@@ -425,7 +425,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 section {
   padding: 60px 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
 }
 
@@ -2194,8 +2194,8 @@ section {
 }
 .cont{
   position: absolute;
-  top: 200%;
-  left: 50%;
+  top: 50%;
+  right: -10%;
   z-index: 999;
   text-align: center;
   padding: 60px 32px;
@@ -2203,6 +2203,25 @@ section {
   transform: translate(-50%,-50%);
   background: rgba(255,255,255,0.04);
   box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+@media (max-width: 992px) {
+  .cont{
+    position: absolute;
+    top: 270%;
+    right: 0%;
+    z-index: 999;
+    text-align: center;
+    padding: 60px 32px;
+    width: 370px;
+    transform: translate(-50%,-50%);
+    transform: scaleX(80%);
+    background: rgba(255,255,255,0.04);
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+  }
+
+  #hero{
+    margin-bottom: 500px;
+  }
 }
 .cont header{
   color: white;
