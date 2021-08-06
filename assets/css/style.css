@@ -554,6 +554,81 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.why .container {
+  position: relative;
+  z-index: 10;
+}
+
+.why .content {
+  padding: 30px 30px 30px 0;
+}
+
+.why .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.why .content p {
+  margin-bottom: 30px;
+}
+
+.why .content .about-btn {
+  padding: 8px 30px 9px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #e03a3c;
+}
+
+.why .content .about-btn i {
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+.why .content .about-btn:hover {
+  background: #e35052;
+  background: #e03a3c;
+}
+
+.why .icon-boxes .icon-box {
+  margin-top: 30px;
+}
+
+.why .icon-boxes .icon-box i {
+  font-size: 40px;
+  color: #e03a3c;
+  margin-bottom: 10px;
+}
+
+.why .icon-boxes .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.why .icon-boxes .icon-box p {
+  font-size: 15px;
+  color: #848484;
+}
+
+@media (max-width: 1200px) {
+  .why .content {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .why {
+    text-align: center;
+  }
+}
+/*------------------------about------------------*/
 .about .container {
   position: relative;
   z-index: 10;
@@ -628,7 +703,7 @@ section {
     text-align: center;
   }
 }
-
+/*------------------------about------------------*/
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
