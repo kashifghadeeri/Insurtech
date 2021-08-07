@@ -48,13 +48,9 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto " href="#why">Why Motor Insurance</a></li>
-          
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-
-          <li><a class="nav-link scrollto" href="#services">Values</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Our Space</a></li>
-
+          <li><a class="nav-link scrollto" href="#services">our core values</a></li>
+          <li><a class="nav-link scrollto " href="#why">why you need a insurance</a></li>
          <!--<li><a href="blog.html">Blog</a></li> -->
           
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
@@ -66,43 +62,65 @@
     </div>
   </header><!-- End Header -->
 
- <!-- ======= Hero Section ======= -->
- <section id="hero" class="d-flex align-items-center">
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
 
-  <div class="container" data-aos="zoom-out" data-aos-delay="100">
-    <div class="row">
-      <div class="col-md-6 title-text">
-        <h1>Protecting Values through Insurance</h1>
-      </div>
-      
-      <!-- =====get started form===== -->
-      <div class="col-md-6 cont">
-        <div class="bodyy">
-          <header>Protecting Values through Insurance</header>
-          <form action="#">
-            <div class="field">
-              <span class="fa fa-user"></span>
-              <input type="text" required placeholder="Enter Vehicle Number">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <div class="row">
+        <div class="col-xl-6">
+          
+         <!-- <h1>Protecting Values through Insurance</h1> -->
+          </div>
+          <!-- =====get started form===== -->
+          
+            <div class="cont">
+             <div class="bodyy">
+               <header>Protecting Values through Insurance</header>
+               <form action="#">
+                  <div class="field">
+                     <span class="fa fa-user"></span>
+                     <input type="text" required placeholder="Enter Vehicle Number">
+                  </div>
+                  <div class="field space">
+                     <span class="fa fa-lock"></span>
+                     <input type="text" class="pass-key" required placeholder="Enter policy Number ">
+                     <span class="show">SHOW</span>
+                  </div>
+                 <!-- <div class="pass">
+                     <a href="#">Forgot Password?</a>
+                  </div> -->
+                  <div class="field">
+                     <input type="submit" value="GET DETAILS">
+                  </div>
+               </form>
+              
             </div>
-            <div class="field space">
-                <span class="fa fa-lock"></span>
-                <input type="text" class="pass-key" required placeholder="Enter Policy Number ">
-            </div>
-            <div class="field">
-                <input type="submit" value="GET DETAILS">
-            </div>
-          </form>
-            
+         </div>
+         
+         <script>
+            const pass_field = document.querySelector('.pass-key');
+            const showBtn = document.querySelector('.show');
+            showBtn.addEventListener('click', function(){
+             if(pass_field.type === "password"){
+               pass_field.type = "text";
+               showBtn.textContent = "HIDE";
+               showBtn.style.color = "#3498db";
+             }else{
+               pass_field.type = "password";
+               showBtn.textContent = "SHOW";
+               showBtn.style.color = "#222";
+             }
+            });
+         </script>
+         </div> 
+         <!-- =====get started form end===== -->
+
         </div>
       </div>
-      <!-- =====get started form end===== -->
-       
-    </div> 
+    </div>
 
-  </div>
+  </section><!-- End Hero -->
 
-</section>
-<!-- End Hero -->
   <main id="main">
 
     <!-- ======= Clients Section ======= -->
@@ -169,7 +187,7 @@
     </section><!-- End why Section -->
 
     <!-- ======= Counts Section ======= -->
-    <section id="about" class="counts">
+    <section id="counts" class="counts">
       <div class="container" data-aos="fade-up">
 
         <div class="row">
@@ -213,103 +231,12 @@
 
    
 
-
-    <!-- ======= why Section ======= -->
-    <section id="about" class="about section-bg">
-      <div class="container" data-aos="fade-up">
-
-            <div class="row no-gutters">
-              <div class="content col-xl-12 d-flex align-items-stretch">
-                <div class="content">
-                  <div class="section-title">
-                    <h2>About Us</h2>
-                  </div>
-                  <p>
-                    Founded in october 2005, sonu motors has come a long way from its beginnings. We're dedicated to offer all vehicle insurances in best price with high discount and cashless claim facility. Sonu Motors is renewed in the best companies like tata AIG, Bajaj allianz, Reliance and shriram general insurance.
-                  </p>
-                 
-                </div>
-              </div>
-             
-            </div>
-    
-      </div>
-    </section><!-- End why Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Testimonials</h2>
-
-        </div>
-
-        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                 <!-- <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">-->
-                  <h3></h3>
-                 <!-- <h4>Ceo &amp; Founder</h4>-->
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Renewing my car insurance from sonu motors was really great experience. It just took me 5 minutes to complete transaction. The overall experience was awesome. I have recommended sonu motors to my friends also.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-               <!--   <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">  -->
-                 <!-- <h3>Sara Wilsson</h3> -->
-                  <!--<h4>Designer</h4>-->
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                   sonu motors is really good place to buy insurance with good discount.Very Satisfied with current insurance claim. Timely delivery and accurate costing is that I liked.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                <!--  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt=""> -->
-                 <!-- <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4> -->
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    I have been a customer to Sonu motors Insurance for the last 5-6 years. I have two 4-wheelers and both are insured with Sonu Motors. I am extremely happy with the services.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-           
-
-           <!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-
-   
+    <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg ">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Our Core Values</h2>
+          <h2>Our 6 Core Values</h2>
         </div>
 
         <div class="row">
@@ -359,142 +286,123 @@
 
       </div>
     </section><!-- End Services Section -->
- 
-     <!-- ======= Portfolio Section ======= -->
-     <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
 
+    
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>Our Workspace</h2>
+          <h2>Testimonials</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
         </div>
 
-        
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1">
-                  </i></a>
-                  <a href="portfolio-details.html" title="More Details"></i></a>
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
                 </div>
               </div>
-            </div>
-          </div>
+            </div><!-- End testimonial item -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"></i></a>
-                  <a href="portfolio-details.html" title="More Details"></i></a>
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
                 </div>
               </div>
-            </div>
-          </div>
+            </div><!-- End testimonial item -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-              
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"></a>
-                  <a href="portfolio-details.html" title="More Details"></a>
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
                 </div>
               </div>
-            </div>
-          </div>
+            </div><!-- End testimonial item -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-              
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"></i></a>
-                  <a href="portfolio-details.html" title="More Details"></i></a>
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
                 </div>
               </div>
-            </div>
-          </div>
+            </div><!-- End testimonial item -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-               
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"></a>
-                  <a href="portfolio-details.html" title="More Details"></a>
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat esse veniam culpa fore nisi cillum quid.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
                 </div>
               </div>
-            </div>
-          </div>
+            </div><!-- End testimonial item -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-               
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"></a>
-                  <a href="portfolio-details.html" title="More Details"></a>
-                </div>
-              </div>
-            </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"></a>
-                  <a href="portfolio-details.html" title="More Details"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-               
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"></i></a>
-                  <a href="portfolio-details.html" title="More Details"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-               
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"></a>
-                  <a href="portfolio-details.html" title="More Details"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
+          <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section><!-- End Testimonials Section -->
 
-    <!-- ======= Services Section ======= -->
+    <!-- ======= why Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+            <div class="row no-gutters">
+              <div class="content col-xl-12 d-flex align-items-stretch">
+                <div class="content">
+                  <div class="section-title">
+                    <h2>About Us</h2>
+                  </div>
+                  <p>
+                    Founded in october 2005, sonu motors has come a long way from its beginnings. We're dedicated to offer all vehicle insurances in best price with high discount and cashless claim facility. Sonu Motors is renewed in the best companies like tata AIG, Bajaj allianz, Reliance and shriram general insurance.
+                  </p>
+                 
+                </div>
+              </div>
+             
+            </div>
+    
+      </div>
+    </section><!-- End why Section -->
+
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -539,24 +447,24 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="Uname" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="col form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="Email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Phone Number" required>
+                <input type="text" class="form-control" name="Pno" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="msg" rows="5" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button name="btn-send" type="submit">Send Message</button></div>
             </form>
           </div>
 
@@ -581,7 +489,7 @@
               Near By Bharat Motors, Opp. Shivaji Nagar Signal,<br>
               G.M. Link Road, Mumbai- 43<br><br>
               <strong>Phone:</strong> +91 98 21 69 7786<br>
-              <strong>Email:</strong> sonutravels4939@gmail.com<br>
+              <strong>Email:</strong> Sonutravels4939@gmail.com<br>
             </p>
           </div>
 
@@ -589,10 +497,9 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#why">Why Insurance?</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Our core values</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Check Policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">our core values</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">get details</a></li>
             </ul>
           </div>
 
@@ -607,13 +514,13 @@
             </ul>
           </div> --->
 
-          <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
+          <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
             <p>subscribe us to get policy updates</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
-          </div> -->
+          </div>
 
         </div>
       </div>
@@ -635,6 +542,7 @@
       </div>
     </div>
   </footer><!-- End Footer -->
+
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
