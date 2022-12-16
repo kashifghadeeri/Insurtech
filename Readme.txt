@@ -1,1 +1,1 @@
-
+Insurtech Insights is the word’s largest insurance technology community – offering unprecedented connection to the most comprehensive and global gathering of tech entrepreneurs, investors, and insurance industry incumbents.
